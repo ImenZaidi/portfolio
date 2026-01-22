@@ -290,7 +290,12 @@ document.addEventListener('DOMContentLoaded', function () {
                                 format: 'a4', 
                                 orientation: 'portrait' 
                             },
-                            pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+                            pagebreak: { 
+                                mode: ['avoid-all', 'css', 'legacy'],
+                                before: '.row',
+                                after: '.row',
+                                avoid: ['.row', 'h6', 'h1', 'h4']
+                            }
                         };
 
                         // Generate and download PDF
