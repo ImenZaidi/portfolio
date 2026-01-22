@@ -36,12 +36,15 @@
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-primary rounded-pill px-4 ms-lg-3" href="#"
+                            id="download-cv">Download CV</a></li>
                     <li class="nav-item"><a class="nav-link btn btn-primary text-white rounded-pill px-4 ms-lg-3"
                             href="#appointment">Book Now</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
     <!-- Hero Section -->
     <section id="home" class="d-flex align-items-center">
@@ -694,6 +697,175 @@
                 <div class="modal-footer justify-content-center border-0 pb-4">
                     <button type="button" class="btn btn-outline-primary rounded-pill px-4"
                         data-bs-dismiss="modal">Okay, I'll wait!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden CV Content -->
+    <div id="cv-content" style="display: none; font-family: 'Poppins', sans-serif; background: white; color: #333;">
+        <div style="padding: 40px; max-width: 800px; margin: 0 auto;">
+            <!-- Header -->
+            <div
+                style="display: flex; align-items: center; border-bottom: 2px solid #333; padding-bottom: 20px; margin-bottom: 30px;">
+                <div
+                    style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin-right: 30px; flex-shrink: 0;">
+                    <img src="assets/images/imen.jpg" alt="Profile"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="flex-grow: 1;">
+                    <h1
+                        style="font-weight: 800; text-transform: uppercase; margin: 0; font-size: 32px; letter-spacing: 1px;">
+                        Imen Zaidi</h1>
+                    <h4 style="font-weight: 600; font-style: italic; margin: 5px 0 0; color: #555;">Medical Student
+                        (Aspiring Cardiologist)</h4>
+                </div>
+                <div style="text-align: right; font-size: 12px; line-height: 1.6;">
+                    <div><i class="fas fa-phone-alt me-2"></i>+1 (555) 123-4567</div>
+                    <div><i class="fas fa-envelope me-2"></i>contact@drimenzaidi.com</div>
+                    <div><i class="fas fa-map-marker-alt me-2"></i>123 Medical Center Dr, NY</div>
+                </div>
+            </div>
+
+            <!-- About -->
+            <div class="row mb-4">
+                <div class="col-3">
+                    <h6 style="font-weight: 800; font-style: italic; text-transform: uppercase; margin-top: 5px;">About
+                    </h6>
+                </div>
+                <div class="col-9">
+                    <p style="font-size: 14px; font-style: italic;">Dedicated Medical Student with a strong passion for
+                        Cardiology. Committed to mastering clinical diagnosis and patient care. My goal is to empower
+                        patients with knowledge and personalized care plans to lead heart-healthy lives. "Give me a
+                        textbook, and I will find the cure."</p>
+                </div>
+                <div class="col-12">
+                    <hr style="margin: 15px 0; border-color: #ddd;">
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="row mb-4">
+                <div class="col-3">
+                    <h6 style="font-weight: 800; font-style: italic; text-transform: uppercase; margin-top: 5px;">Skills
+                    </h6>
+                </div>
+                <div class="col-9">
+                    <ul style="list-style: disc; margin-left: 15px; font-size: 14px; padding-left: 0;">
+                        <li>Clinical Diagnosis, Patient Communication</li>
+                        <li>Echocardiography (Basic), ECG Interpretation</li>
+                        <li>Medical Research, Data Analysis</li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <hr style="margin: 15px 0; border-color: #ddd;">
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="row mb-4">
+                <div class="col-3">
+                    <h6 style="font-weight: 800; font-style: italic; text-transform: uppercase; margin-top: 5px;">
+                        Languages</h6>
+                </div>
+                <div class="col-9">
+                    <ul style="list-style: disc; margin-left: 15px; font-size: 14px; padding-left: 0;">
+                        <li>Arabic : Native</li>
+                        <li>French : Fluent</li>
+                        <li>English : Fluent</li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <hr style="margin: 15px 0; border-color: #ddd;">
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="row mb-4">
+                <div class="col-3">
+                    <h6 style="font-weight: 800; font-style: italic; text-transform: uppercase; margin-top: 5px;">
+                        Professional Experience</h6>
+                </div>
+                <div class="col-9">
+                    <div class="mb-3">
+                        <h6 style="font-weight: 700; font-size: 15px; margin-bottom: 2px;">Summer internship in Medical
+                            Semiotics – Cardiology</h6>
+                        <div style="font-size: 13px; font-style: italic; color: #555; margin-bottom: 5px;">Monji Slim
+                            Hospital, La Marsa | June 2025 – July 2025</div>
+                        <ul style="font-size: 14px; margin-bottom: 0;">
+                            <li>Observed cardiac procedures and patient consultations.</li>
+                            <li>Assisted in basic semiological examinations under supervision.</li>
+                        </ul>
+                    </div>
+                    <div class="mb-3">
+                        <h6 style="font-weight: 700; font-size: 15px; margin-bottom: 2px;">Summer internship in Medical
+                            Semiotics – Emergency</h6>
+                        <div style="font-size: 13px; font-style: italic; color: #555; margin-bottom: 5px;">Monji Slim
+                            Hospital, La Marsa | June 2024 – July 2024</div>
+                        <ul style="font-size: 14px; margin-bottom: 0;">
+                            <li>Triage assistance and observation of emergency care protocols.</li>
+                            <li>Learned rapid assessment techniques for acute conditions.</li>
+                        </ul>
+                    </div>
+                    <div class="mb-3">
+                        <h6 style="font-weight: 700; font-size: 15px; margin-bottom: 2px;">Summer internship in Nursing
+                            Care – General Surgery</h6>
+                        <div style="font-size: 13px; font-style: italic; color: #555; margin-bottom: 5px;">Hospital of
+                            the Internal Security Forces | June 2023 – July 2023</div>
+                        <ul style="font-size: 14px; margin-bottom: 0;">
+                            <li>Assisted with post-operative care and wound dressing.</li>
+                            <li>Monitored patient vitals and reported to nursing staff.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <hr style="margin: 15px 0; border-color: #ddd;">
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="row mb-4">
+                <div class="col-3">
+                    <h6 style="font-weight: 800; font-style: italic; text-transform: uppercase; margin-top: 5px;">
+                        Education</h6>
+                </div>
+                <div class="col-9">
+                    <div class="mb-3">
+                        <h6 style="font-weight: 700; font-size: 15px; margin-bottom: 2px;">Second cycle of medical
+                            studies</h6>
+                        <div style="font-size: 13px; font-style: italic; color: #555; margin-bottom: 5px;">Faculty of
+                            Medicine of Sousse | Aug 2024 – May 2027</div>
+                    </div>
+                    <div class="mb-3">
+                        <h6 style="font-weight: 700; font-size: 15px; margin-bottom: 2px;">First cycle of medical
+                            studies</h6>
+                        <div style="font-size: 13px; font-style: italic; color: #555; margin-bottom: 5px;">Faculty of
+                            Medicine of Sousse | Aug 2022 – June 2024</div>
+                    </div>
+                    <div class="mb-3">
+                        <h6 style="font-weight: 700; font-size: 15px; margin-bottom: 2px;">Baccalaureate Diploma –
+                            Mathematics Section</h6>
+                        <div style="font-size: 13px; font-style: italic; color: #555; margin-bottom: 5px;">Pilot High
+                            School of Ariana | Sept 2018 – July 2022</div>
+                        <div style="font-size: 13px;">Class of 2022 with High Honors</div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <hr style="margin: 15px 0; border-color: #ddd;">
+                </div>
+            </div>
+
+            <!-- Achievements/Social -->
+            <div class="row mb-4">
+                <div class="col-3">
+                    <h6 style="font-weight: 800; font-style: italic; text-transform: uppercase; margin-top: 5px;">Social
+                    </h6>
+                </div>
+                <div class="col-9">
+                    <p style="font-size: 14px;">linkedin.com/in/imen-zaidi</p>
+                </div>
+                <div class="col-12">
+                    <hr style="margin: 15px 0; border-color: #ddd;">
                 </div>
             </div>
         </div>
